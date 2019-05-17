@@ -1,0 +1,156 @@
+/* Skills */
+.card-skills {
+  max-width: 25%;
+  background-color: green;
+  margin: 20px;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.content-skills {
+  width: 70%;
+  display: flex;
+}
+
+.title-skills {
+  text-align: right;
+  width: 30%;
+}
+
+.skills div {
+  background-color: #ff300f;
+}
+
+/* Home */
+.sub-text span {
+  font-family: 'Saira Extra Condensed';
+  font-size: 25px;
+  height: 40px;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: 100;
+  padding-top: 70px;
+}
+
+.name-circle .flexbox {
+  display: grid;
+  display: inline-grid;
+}
+
+.name-circle {
+  margin: 350px auto;
+  display: block;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.img-universe {
+  width: 100%;
+  padding-top: 25px;
+  max-height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/univ.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  line-height: 50pt;
+}
+
+/* NavBar */
+.nav-item {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0 0 1px 1px #ffffff;
+}
+.nav-item ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-item ul li {
+  display: inline-flex;
+}
+
+.nav-item ul li a {
+  padding: 17px 10px;
+  text-decoration: none;
+  color: #595959;
+  display: block;
+  text-align: center;
+}
+
+li a:hover {
+  color: #1c1c1c;
+}
+
+/* All */
+.root {
+  display: unset;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sizing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: sans-serif;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Julius Sans One';
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #2a2b40;
+}
+header {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 450px) {
+  .nav-item {
+    position: relative;
+  }
+  .name-circle {
+    width: 300px;
+    height: 300px;
+  }
+  .sub-text span {
+    font-size: 20px;
+    height: 30px;
+  }
+  .name {
+    font-size: 50px;
+  }
+  .img-universe {
+    line-height: 40pt;
+  }
+  .nav-item ul li {
+    display: inline;
+  }
+}
