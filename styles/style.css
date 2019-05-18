@@ -1,3 +1,56 @@
+/* About Me */
+.text-about {
+  text-align: justify;
+}
+
+.stuffs-text {
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.like-about {
+  padding: 0 100px;
+}
+
+.like-about .card {
+  width: 33.33%;
+  text-align: center;
+}
+
+.things-about {
+  margin: 80px 0 0 0;
+}
+
+.icons-things {
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+}
+.keep-text {
+  font-family: 'Lobster';
+  font-size: 60px;
+  margin: 0 0 30px 0;
+}
+
+.complicated-text {
+  font-family: 'Anton';
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+
+.bio-about {
+  width: 50%;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.backcolor {
+  background-color: #0a0d15ff;
+  color: white;
+}
+
 /* Skills */
 .sizing-svg {
   max-width: 125px;
@@ -7,13 +60,6 @@
 
 .size-icon {
   font-size: 80px;
-}
-
-.card-skills {
-  margin: 25px 0;
-  width: 25%;
-  float: left;
-  text-align: center;
 }
 
 .content-skills {
@@ -102,6 +148,13 @@ li a:hover {
   border-left-style: solid;
 }
 
+.card {
+  margin: 25px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
 .root {
   display: unset;
 }
@@ -142,8 +195,26 @@ header {
 }
 
 @media (max-width: 450px) {
+  /* About Me */
+  .complicated-text {
+    margin-top: 0;
+  }
+
+  .verticaline {
+    border-left-style: none;
+  }
+  .about-me {
+    display: block;
+    width: 100%;
+    height: 50em;
+  }
+  .bio-about {
+    width: 90%;
+    padding: 5%;
+    text-align: center;
+  }
   /* Skills */
-  .card-skills {
+  .card {
     margin: 25px 0;
     width: 50%;
     text-align: center;
@@ -161,9 +232,11 @@ header {
 
   .skills {
     display: block;
+    height: 62em;
   }
 
   .little-line {
+    padding-top: 20px;
     border-bottom: 2px solid;
     width: 70px;
     height: 5px;
@@ -172,23 +245,29 @@ header {
     display: block;
     margin-bottom: 50px;
   }
+
   .nav-item {
     position: relative;
   }
+
   .name-circle {
     width: 300px;
     height: 300px;
   }
+
   .sub-text span {
     font-size: 20px;
     height: 30px;
   }
+
   .name {
     font-size: 50px;
   }
+
   .img-universe {
     line-height: 40pt;
   }
+
   .nav-item ul li {
     display: inline;
   }

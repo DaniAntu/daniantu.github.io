@@ -48,7 +48,7 @@ function skillsArray() {
   data.forEach((element) => {
     if (element.skill === 'Materialize' || element.skill === 'Firebase') {
       document.getElementById('skills-card').innerHTML += `
-      <div class="card-skills">
+      <div class="card">
         <div class="logo-skills">
           <img class="sizing-svg" src="./assets/${element.logo}" 
           alt="${element.skill}" title="${element.skill}"></img>
@@ -57,7 +57,7 @@ function skillsArray() {
       </div >`;
     } else {
       document.getElementById('skills-card').innerHTML += `
-    <div class="card-skills">
+    <div class="card">
       <div class="logo-skills">
         <i class="${element.logo} size-icon" title="${element.skill}" ></i>
       </div>
@@ -66,9 +66,9 @@ function skillsArray() {
     }
   });
 }
-
 skillsArray();
 
 // About
+
 // Projects
 // Contact
