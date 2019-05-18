@@ -40,13 +40,13 @@ skills.innerHTML = `
   <div class="title-skills">
     <H1>HABILIDADES TÉCNICAS</H1>
   </div>
+  <div class="little-line"></div>
   <div id="skills-card" class="content-skills verticaline"></div>
 </div>`;
 
 function skillsArray() {
   data.forEach((element) => {
     if (element.skill === 'Materialize' || element.skill === 'Firebase') {
-      console.log('entro en Material y fire');
       document.getElementById('skills-card').innerHTML += `
       <div class="card-skills">
         <div class="logo-skills">

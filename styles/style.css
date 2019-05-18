@@ -142,6 +142,36 @@ header {
 }
 
 @media (max-width: 450px) {
+  /* Skills */
+  .card-skills {
+    margin: 25px 0;
+    width: 50%;
+    text-align: center;
+  }
+
+  .content-skills {
+    width: 100%;
+  }
+
+  .title-skills {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .skills {
+    display: block;
+  }
+
+  .little-line {
+    border-bottom: 2px solid;
+    width: 70px;
+    height: 5px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    display: block;
+    margin-bottom: 50px;
+  }
   .nav-item {
     position: relative;
   }
