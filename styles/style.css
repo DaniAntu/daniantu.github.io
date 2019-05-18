@@ -1,24 +1,29 @@
 /* Skills */
+.sizing-svg {
+  max-width: 125px;
+  margin-bottom: 12px;
+  margin-top: 6px;
+}
+
+.size-icon {
+  font-size: 80px;
+}
+
 .card-skills {
-  max-width: 25%;
-  background-color: green;
-  margin: 20px;
-  padding: 15px;
-  flex-grow: 1;
+  margin: 25px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
 }
 
 .content-skills {
   width: 70%;
-  display: flex;
 }
 
 .title-skills {
+  margin-right: 25px;
   text-align: right;
   width: 30%;
-}
-
-.skills div {
-  background-color: #ff300f;
 }
 
 /* Home */
@@ -93,6 +98,10 @@ li a:hover {
 }
 
 /* All */
+.verticaline {
+  border-left-style: solid;
+}
+
 .root {
   display: unset;
 }
