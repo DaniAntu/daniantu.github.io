@@ -27,15 +27,11 @@ navbar.innerHTML = `
 </header>`;
 
 navbar.addEventListener('click', (event) => {
-  console.log(event.target.className);
-  if (event.target.className === 'fas fa-ellipsis-v') {
+  if (event.target.className === 'fas fa-ellipsis-v' || event.target.className === 'location-l') {
     document.getElementById('menu-collapse').style.display = 'block';
   } else {
     document.getElementById('menu-collapse').style.display = 'none';
   }
-  // const idSelected = event.target.id;
-  // console.log(idSelected);
-  // alert(array[idSelected]);
 });
 
 // Home
@@ -146,7 +142,11 @@ projects.innerHTML = `
   <div class="projects-content">
     <div class="overlay size-card backcolor">
       <div class="back-text">
-        <h2 class="card-title"><i class="fas fa-terminal"></i> Burger Queen</h2>
+        <h2 class="card-title">
+          <i class="fas fa-chevron-right"></i>
+            Burger Queen
+          <i class="far fa-window-minimize"></i>
+        </h2>
       </div>
       <img src="./assets/burger.png" class="card-img-top" alt="burger queen app" />
       <div class="project-info">
@@ -169,8 +169,9 @@ projects.innerHTML = `
     <div class="overlay size-card backcolor">
       <div class="back-text">
         <h2 class="card-title">
-          <i class="fas fa-thumbtack"></i>
-          Data Lovers
+          <i class="fas fa-chevron-right"></i>
+            Data Lovers
+          <i class="far fa-window-minimize"></i>
         </h2>
       </div>
       <img src="./assets/data.png" class="card-img-top" alt="data lovers" />
@@ -193,7 +194,11 @@ projects.innerHTML = `
     </div>
     <div class="overlay size-card backcolor">
       <div class="back-text">
-        <h2><i class="fas fa-terminal"></i> Food and Travel</h2>
+        <h2>
+          <i class="fas fa-chevron-right"></i>
+            Food and Travel 
+          <i class="far fa-window-minimize"></i>
+        </h2>
       </div>
       <img src="./assets/travel.png" class="card-img-top" alt="food travel app" />
       <div class="project-info">
