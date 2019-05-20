@@ -272,6 +272,19 @@
 }
 
 /* NavBar */
+.menu {
+  display: block;
+}
+
+.mug-menu {
+  position: fixed;
+  margin-left: 20px;
+}
+
+.location-l {
+  padding-top: 13px !important;
+}
+
 .nav-item {
   position: fixed;
   top: 0;
@@ -305,6 +318,10 @@ li a:hover {
 }
 
 /* All */
+.nav-item ul .dot-icon {
+  display: none;
+}
+
 .verticaline {
   border-left-style: solid;
 }
@@ -319,6 +336,7 @@ li a:hover {
 .root {
   display: unset;
 }
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -404,13 +422,11 @@ header {
   .like-about {
     padding: 0 50px;
   }
+
   .complicated-text {
     margin-top: 0;
   }
 
-  .verticaline {
-    border-left-style: none;
-  }
   .about-me {
     display: block;
     width: 100%;
@@ -444,21 +460,40 @@ header {
     height: 62em;
   }
 
-  .little-line {
-    padding-top: 20px;
-    border-bottom: 2px solid;
-    width: 70px;
-    height: 5px;
-    margin: 0 auto;
-    margin-bottom: 0px;
-    display: block;
-    margin-bottom: 50px;
+  /* NavBar */
+  .menu {
+    display: none;
   }
 
-  .nav-item {
+  .location-l {
+    float: left;
+    font-size: 30px;
+    width: 50px;
+  }
+
+  .location-r {
+    margin-top: 4px;
+    float: right;
+    width: 25px;
+    font-size: 20px;
+    padding-right: 0 !important;
+  }
+
+  .nav-item ul .dot-icon {
+    display: block;
+    padding-right: 20px;
+  }
+
+  .nav-item,
+  .mug-menu {
     position: relative;
   }
 
+  .nav-item ul li {
+    display: inline;
+  }
+
+  /* Home */
   .name-circle {
     width: 300px;
     height: 300px;
@@ -477,7 +512,19 @@ header {
     line-height: 40pt;
   }
 
-  .nav-item ul li {
-    display: inline;
+  /* All */
+  .little-line {
+    padding-top: 20px;
+    border-bottom: 2px solid;
+    width: 70px;
+    height: 5px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .verticaline {
+    border-left-style: none;
   }
 }

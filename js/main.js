@@ -3,11 +3,18 @@ const navbar = document.getElementById('navbar');
 navbar.innerHTML = `
 <header>
   <div class="nav-item">
-    <nav class="container">
+    <div class="mug-menu">
       <ul>
         <li>
-          <a href="#home"><i class="fas fa-mug-hot icohome"></i></a>
+          <a href="#home" class="location-l"><i class="fas fa-mug-hot icohome"></i></a>
         </li>
+        <li class="dot-icon">
+          <a class="location-r"><i class="fas fa-ellipsis-v"></i></a>
+        </li>
+      </ul>
+    </div>
+    <nav class="menu container">
+      <ul>
         <li><a href="#skills">Habilidades Técnicas</a></li>
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#projects">Proyectos</a></li>
@@ -16,6 +23,31 @@ navbar.innerHTML = `
     </nav>
   </div>
 </header>`;
+
+// navbar.innerHTML = `
+// <header>
+//   <div class="nav-item">
+//     <nav class="container">
+//       <ul>
+//         <li>
+//           <a href="#home"><i class="fas fa-mug-hot icohome"></i></a>
+//         </li>
+//         <li><a href="#skills">Habilidades Técnicas</a></li>
+//         <li><a href="#about">Sobre mí</a></li>
+//         <li><a href="#projects">Proyectos</a></li>
+//         <li><a href="#contact">Contáctame</a></li>
+//       </ul>
+//     </nav>
+//   </div>
+// </header>`;
+
+// navbar.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   console.log(event);
+//   // const idSelected = event.target.id;
+//   // console.log(idSelected);
+//   // alert(array[idSelected]);
+// });
 
 // Home
 const home = document.getElementById('home');
