@@ -484,8 +484,14 @@ header {
     padding-right: 20px;
   }
 
-  .nav-item,
+  .nav-item {
+    position: relative;
+  }
+
   .mug-menu {
+    background-color: #fff;
+    width: 100%;
+    margin-left: 0;
     position: relative;
   }
 

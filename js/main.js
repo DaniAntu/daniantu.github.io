@@ -13,41 +13,30 @@ navbar.innerHTML = `
         </li>
       </ul>
     </div>
-    <nav class="menu container">
-      <ul>
-        <li><a href="#skills">Habilidades Técnicas</a></li>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contáctame</a></li>
-      </ul>
-    </nav>
+    <div id="menu-collapse" class="menu">
+      <nav class="container menu-nav">
+        <ul>
+          <li><a href="#skills">Habilidades Técnicas</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contáctame</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>`;
 
-// navbar.innerHTML = `
-// <header>
-//   <div class="nav-item">
-//     <nav class="container">
-//       <ul>
-//         <li>
-//           <a href="#home"><i class="fas fa-mug-hot icohome"></i></a>
-//         </li>
-//         <li><a href="#skills">Habilidades Técnicas</a></li>
-//         <li><a href="#about">Sobre mí</a></li>
-//         <li><a href="#projects">Proyectos</a></li>
-//         <li><a href="#contact">Contáctame</a></li>
-//       </ul>
-//     </nav>
-//   </div>
-// </header>`;
-
-// navbar.addEventListener('click', (event) => {
-//   event.preventDefault();
-//   console.log(event);
-//   // const idSelected = event.target.id;
-//   // console.log(idSelected);
-//   // alert(array[idSelected]);
-// });
+navbar.addEventListener('click', (event) => {
+  console.log(event.target.className);
+  if (event.target.className === 'fas fa-ellipsis-v') {
+    document.getElementById('menu-collapse').style.display = 'block';
+  } else {
+    document.getElementById('menu-collapse').style.display = 'none';
+  }
+  // const idSelected = event.target.id;
+  // console.log(idSelected);
+  // alert(array[idSelected]);
+});
 
 // Home
 const home = document.getElementById('home');
