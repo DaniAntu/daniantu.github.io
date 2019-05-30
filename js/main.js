@@ -1,38 +1,49 @@
 // NavBar
 const navbar = document.getElementById('navbar');
 navbar.innerHTML = `
-<header>
-  <div class="nav-item">
-    <div class="mug-menu">
-      <ul>
-        <li>
-          <a href="#home" class="location-l"><i class="fas fa-mug-hot icohome"></i></a>
-        </li>
-        <li class="dot-icon">
-          <a class="location-r"><i class="fas fa-ellipsis-v"></i></a>
-        </li>
+  <header>
+    <nav class="nav">
+      <div>
+        <a href="#home"><i class="fas fa-mug-hot logo"></i></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#skills">Habilidades Técnicas</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contáctame</a></li>
       </ul>
-    </div>
-    <div id="menu-collapse" class="menu">
-      <nav class="container menu-nav">
-        <ul>
-          <li><a href="#skills">Habilidades Técnicas</a></li>
-          <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contáctame</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>`;
+      <div id="burger" class="burger">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <div class="line-three"></div>
+      </div>
+    </nav>
+  </header>
+`;
 
-navbar.addEventListener('click', (event) => {
-  if (event.target.className === 'fas fa-ellipsis-v' || event.target.className === 'location-l') {
-    document.getElementById('menu-collapse').style.display = 'block';
-  } else {
-    document.getElementById('menu-collapse').style.display = 'none';
-  }
-});
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+
+  burger.addEventListener('click', () => {
+    // Toggle Nav
+    nav.classList.toggle('nav-active');
+
+    // Animate Links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.1}s`;
+      }
+    });
+
+    // Burger Animation
+    burger.classList.toggle('toggle');
+  });
+};
+navSlide();
 
 // Home
 const home = document.getElementById('home');
@@ -153,7 +164,7 @@ projects.innerHTML = `
         <div class="card-body">
           <p class="card-text">Aplicacion para realizar pedidos de un restaurant.</p>
           <small class="text-muted">
-            Desarrollado en Angular, Angular Material, MongoDB
+            Desarrollado en Angular, Angular Material, MongoDB.
           </small>
         </div>
         <div class="card-footer">
